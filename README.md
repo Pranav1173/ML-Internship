@@ -16,6 +16,83 @@ This project focuses on real-time drowsiness detection based on mouth landmarks 
 2. **Download Dlib Shape Predictor:**
    [shape_predictor_68_face_landmarks.dat](https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat)
 
+
+# Task 3
+# Real Time Facial Expression Recognition
+
+## Overview
+
+This project focuses on training a deep learning model for facial expression recognition using the FER2013 dataset. The model is built using Keras and TensorFlow, and it classifies facial expressions into seven categories: angry, disgust, fear, happy, neutral, sad, and surprise. The dataset consists of labeled facial images for training and testing the model.
+
+## Dependencies
+
+- **Keras:** A high-level neural networks API, running on top of TensorFlow or other supported backends.
+   ```bash
+   pip install keras
+   ```
+
+- **TensorFlow:** An open-source machine learning library.
+   ```bash
+   pip install tensorflow
+   ```
+
+- **Pandas:** A powerful data manipulation and analysis library.
+   ```bash
+   pip install pandas
+   ```
+
+- **NumPy:** A library for numerical operations.
+   ```bash
+   pip install numpy
+   ```
+
+- **OpenCV:** An open-source computer vision and machine learning software library.
+   ```bash
+   pip install opencv-python
+   ```
+
+## Data Preparation and Feature Extraction
+
+### `createdf(dir)`
+
+Creates data frames for both the training and testing directories.
+
+### `feat_ext(images)`
+
+Extracts features from images, converting them into arrays for model training.
+
+## Model Architecture and Training
+
+The neural network model comprises Convolutional and Fully Connected layers for image classification. The model is trained using the training features (`train_feats`) and labels (`y_train`) and validated on the test features (`test_feats`) and labels (`y_test`).
+
+## Label Encoding
+
+Label encoding is performed using the `LabelEncoder` from scikit-learn to convert class vectors (integers) into a binary class matrix.
+
+## Saving Model Architecture
+
+The model architecture is saved in a JSON file named "model_architecture.json."
+
+## Usage
+
+1. **Download the FER2013 dataset:**
+   [FER2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013/)
+
+2. **Install dependencies:**
+   ```bash
+   pip install keras tensorflow pandas numpy opencv-python
+   ```
+
+3. **Run the provided code:**
+   ```bash
+   python facial_expression_recognition.py
+   ```
+
+4. **Adjust training epochs (optional):**
+   Modify the `epochs` parameter in the code according to your preference.
+
+Feel free to explore and modify the script for your specific use case or dataset.
+
 # Task 4 
 # Voice and Face Emotion Detection Project
 
