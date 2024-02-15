@@ -57,8 +57,6 @@ This function takes the path to an image as input and uses dlib's face detector 
    python wrinkles_detection.py
    ```
 
-Feel free to explore and modify the script to suit your needs or integrate it into your existing projects for wrinkle detection.
-
 
 # Task 3
 # Real Time Facial Expression Recognition
