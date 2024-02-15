@@ -1,6 +1,20 @@
-# ML-Internship
-The repository contains all the tasks completed for the Machine Learning Internship.
+# Task 1
+# Drowsiness Detection using Mouth Landmarks
 
+This project focuses on real-time drowsiness detection based on mouth landmarks using Python. It utilizes the dlib library for facial landmark detection and OpenCV for image processing. The script calculates the Mouth Aspect Ratio (MAR) to determine whether the mouth is open or closed based on the defined threshold.
+
+## Setup
+
+1. **Download Dependencies:**
+   Install the required dependencies using the following commands:
+   ```bash
+   pip install opencv-python
+   pip install cmake
+   pip install dlib-19.24.1-cp311-cp311-win_amd64.whl
+   ```
+
+2. **Download Dlib Shape Predictor:**
+   [shape_predictor_68_face_landmarks.dat](https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat)
 
 # Task 4 
 # Voice and Face Emotion Detection Project
@@ -80,8 +94,6 @@ This project combines real-time face and voice emotion detection using Python, l
    ```bash
    python combined_emotion_detection.py
    ```
-
-Feel free to explore and modify the provided scripts to suit your needs.
 
 # Task 5
 # Drowsiness Detection 
