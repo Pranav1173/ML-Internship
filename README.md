@@ -82,3 +82,30 @@ This project combines real-time face and voice emotion detection using Python, l
    ```
 
 Feel free to explore and modify the provided scripts to suit your needs.
+
+# Task 5
+# Drowsiness Detection 
+
+This project focuses on real-time drowsiness detection leveraging facial landmarks. By analyzing the eye aspect ratio (EAR) using dlib for facial landmark detection and OpenCV for webcam video processing, the system monitors signs of drowsiness.
+
+## Setup
+
+1. **Download dlib Shape Predictor:**
+   [shape_predictor_68_face_landmarks.dat](https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat)
+
+2. **Install dlib for Python 3.11:**
+   Download [dlib wheel file](https://github.com/Murtaza-Saeed/dlib/blob/master/dlib-19.24.1-cp311-cp311-win_amd64.whl) and install:
+   ```bash
+   pip install dlib-19.24.1-cp311-cp311-win_amd64.whl
+   ```
+
+3. **Install Required Packages:**
+   ```bash
+   pip install opencv-python scipy
+   ```
+
+## Code Overview
+
+The project includes a Python script to perform drowsiness detection. It calculates the eye aspect ratio, detects facial landmarks, and monitors drowsiness in real-time. Constants for eye landmarks and drowsiness thresholds are set, and the EAR is displayed on the frame. In case of drowsiness, a corresponding message is displayed.
+
+Feel free to explore and modify the provided script to suit your needs.
