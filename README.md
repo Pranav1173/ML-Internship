@@ -17,6 +17,49 @@ This project focuses on real-time drowsiness detection based on mouth landmarks 
    [shape_predictor_68_face_landmarks.dat](https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat)
 
 
+#  Task 2
+# Wrinkles Detection
+
+## Overview
+
+This project aims to detect wrinkles in facial images using facial landmarks. It utilizes the dlib library for face detection and facial landmark prediction. Wrinkles are detected based on the distances between specific facial landmarks, such as the outer and inner corners of the eyes and the forehead region. The program calculates the ratio of outer to inner eye distances and eye to forehead distance to determine the presence of wrinkles.
+
+## Dependencies
+
+- **dlib:** A toolkit for machine learning and computer vision algorithms.
+   ```bash
+   pip install dlib
+   ```
+
+- **OpenCV:** An open-source computer vision and machine learning software library.
+   ```bash
+   pip install opencv-python
+   ```
+
+## Wrinkle Detection Function
+
+### `detect_wrinkles(image_path)`
+
+This function takes the path to an image as input and uses dlib's face detector and shape predictor to identify facial landmarks. It then calculates the distances between specific landmarks to determine the presence of wrinkles. The result is based on a predefined wrinkle ratio threshold.
+
+## Usage
+
+1. **Download the required model file:**
+   [shape_predictor_68_face_landmarks.dat](https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat)
+
+2. **Install dependencies:**
+   ```bash
+   pip install dlib opencv-python
+   ```
+
+3. **Run the provided code:**
+   ```bash
+   python wrinkles_detection.py
+   ```
+
+Feel free to explore and modify the script to suit your needs or integrate it into your existing projects for wrinkle detection.
+
+
 # Task 3
 # Real Time Facial Expression Recognition
 
