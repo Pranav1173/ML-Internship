@@ -1,5 +1,5 @@
 # Task 1
-# Drowsiness Detection using Mouth Landmarks
+# Mouth Position Detection
 
 This project focuses on real-time drowsiness detection based on mouth landmarks using Python. It utilizes the dlib library for facial landmark detection and OpenCV for image processing. The script calculates the Mouth Aspect Ratio (MAR) to determine whether the mouth is open or closed based on the defined threshold.
 
