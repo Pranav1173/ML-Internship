@@ -54,7 +54,7 @@ This function takes the path to an image as input and uses dlib's face detector 
 
 3. **Run the provided code:**
    ```bash
-   python wrinkles_detection.py
+   wrinkles_detection.ipynb
    ```
 
 
@@ -124,12 +124,7 @@ The model architecture is saved in a JSON file named "model_architecture.json."
    pip install keras tensorflow pandas numpy opencv-python
    ```
 
-3. **Run the provided code:**
-   ```bash
-   python facial_expression_recognition.py
-   ```
-
-4. **Adjust training epochs (optional):**
+3. **Adjust training epochs (optional):**
    Modify the `epochs` parameter in the code according to your preference.
 
 Feel free to explore and modify the script for your specific use case or dataset.
@@ -141,9 +136,7 @@ This project combines real-time face and voice emotion detection using Python, l
 
 ## Code Structure
 
-- `face_emotion_detection.py`: Performs real-time face emotion detection using OpenCV and a pre-trained face emotion model.
-- `voice_emotion_detection.py`: Processes live voice input through PyAudio and applies a pre-trained voice emotion model.
-- `combined_emotion_detection.py`: Simultaneously performs face and voice emotion detection, displaying integrated results.
+- `Combined_Detect.ipynb`: Simultaneously performs face and voice emotion detection, displaying integrated results.
 
 ### Functions:
 
@@ -193,25 +186,6 @@ This project combines real-time face and voice emotion detection using Python, l
    pip install tensorflow
    ```
 
-## Usage
-
-1. Run `face_emotion_detection.py` for real-time face emotion detection.
-
-   ```bash
-   python face_emotion_detection.py
-   ```
-
-2. Run `voice_emotion_detection.py` for real-time voice emotion detection.
-
-   ```bash
-   python voice_emotion_detection.py
-   ```
-
-3. Run `combined_emotion_detection.py` for simultaneous face and voice emotion detection, displaying integrated results.
-
-   ```bash
-   python combined_emotion_detection.py
-   ```
 
 # Task 5
 # Drowsiness Detection 
